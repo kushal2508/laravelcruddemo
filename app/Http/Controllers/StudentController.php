@@ -9,7 +9,7 @@ class StudentController extends Controller
 {
 
     public function welcome() {
-        return view('welcome')->with('title', 'Student Management System');
+        return view('welcome')->with('title', 'Laravel CRUD Demo');
     }
 
     public function index() {}

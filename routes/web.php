@@ -8,3 +8,6 @@ Route::get('/student/show/{students}', 'StudentController@show');
 Route::get('/student/destroy/{students}', 'StudentController@destroy');
 Route::get('/student/edit/{students}', 'StudentController@edit');
 // Route::match(['put', 'patch'], '/students/update/{students}', 'StudentController@update');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
